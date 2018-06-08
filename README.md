@@ -1,2 +1,2 @@
 # TCP-Communication-program
-实现了简易的多线程TCP文字和文件在Server和Client之间的传输
+使用Python实现了简易的多线程TCP文字和文件在Server和Client之间的传输
