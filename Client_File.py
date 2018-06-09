@@ -18,3 +18,6 @@ while True:
             s.send(filedata) #传送文件内容
         fo.close() #关闭Socket连接
         print 'send over...'
+
+        
+        Contributed by 许焯 信息16-2
