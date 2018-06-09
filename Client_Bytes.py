@@ -5,18 +5,18 @@ import sys
 def socket_client():
     try:
         s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.connect(('127.0.0.1', 6666))
+        s.connect(('172.16.221.129 ', 6666))    #创建 socket连接到虚拟机服务器，端口6666
     except socket.error as msg:
         print msg
-        sys.exit(1)
+        sys.exit(1)#创建socket失败处理
     print s.recv(1024)
     while 1:
         data = raw_input('please input words: ')
-        s.send(data)
-        print s.recv(1024)
+        s.send(data)#发送数据
+        print s.recv(1024)#输出服务器发送的交互信息
         if data == 'exit':
             break
-    s.close()
+    s.close()#关闭 socket
 
 
 if __name__ == '__main__':
