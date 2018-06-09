@@ -3,7 +3,7 @@ host='172.16.221.1'
 port=12307
 s=socket.socket(socket.AF_INET,socket.SOCK_STREAM) #建立连接
 s.bind((host,port)) #绑定需要监听的Ip和端口号
-s.listen(1)
+s.listen(10)#最多允许10个连接并发
 
  
 def conn_thread(connection,address):  
