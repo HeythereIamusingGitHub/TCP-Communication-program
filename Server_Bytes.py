@@ -36,3 +36,5 @@ def deal_data(conn, addr):
 
 if __name__ == '__main__':
     socket_service()
+    
+     #Contributed by 许焯 信息16-2
