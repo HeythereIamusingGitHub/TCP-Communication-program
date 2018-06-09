@@ -20,4 +20,4 @@ while True:
         print 'send over...'
 
         
-        Contributed by 许焯 信息16-2
+        #Contributed by 许焯 信息16-2
