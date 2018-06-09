@@ -9,9 +9,9 @@ def socket_client():
     except socket.error as msg:
         print msg
         sys.exit(1)#创建socket失败处理
-    print s.recv(1024)
+    print s.recv(1024)#输出从Sever传来的交互信息
     while 1:
-        data = raw_input('please input words: ')
+        data = raw_input('please input words: ')#输入要传送的文字
         s.send(data)#发送数据
         print s.recv(1024)#输出服务器发送的交互信息
         if data == 'exit':
