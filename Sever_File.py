@@ -40,3 +40,5 @@ while True:
     thread.start_new_thread(conn_thread,(connection,address)) #为新链接建立新的线程
 
 s.close()
+
+ #Contributed by 许焯 信息16-2
